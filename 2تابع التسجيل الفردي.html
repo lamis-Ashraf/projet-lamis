@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة التسجيل للأفراد</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body  style="background: linear-gradient(to left, #c0c0c0, #d3d3d3, #c0c0c0, #a9a9a9, #c0c0c0   ); " dir="rtl">
+    <div class="container" style="padding-right: 4rem; height: 100vh;">
+        <h1 style="text-align: center; font-size: 50px;">صفحة التسجيل للأفراد</h1>
+      <div class="cli">
+        <h2>البيانات الشخصية</h2>
+        <form>
+          <div>
+            <label style=" font-size: 30px;">الاسم:</label>
+            <input  class="reme" type="text" required>
+            <span style="padding-right: 3rem; font-size: 30px;" >الجنس:</span>
+                <input  style="width: 50px; height: 20px;" type="radio" id="jawal" name="fav_language" value="jawal">
+               <label for="jawal" > ذكر</label>
+                <input  style="width: 50px; height: 20px;" type="radio" id="jawal" name="fav_language" value="jawal">
+                <label for="jawal" > انثى </label>
+                <label style=" font-size: 30px; padding-right: 3rem;" >تاريخ الميلاد:</label>
+            <input  class="reme" type="date" required>
+            </div>
+            <div style="padding-top: 4rem; padding-bottom: 4rem;">
+                <label style=" font-size: 30px; ">رقم الجوال:</label>
+                <input  class="reme" type="tel" id="phone" name="phone" placeholder="056-459-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <label style=" font-size: 30px; padding-right: 5rem;" >البريد الإلكتروني:</label>
+                <input  class="reme" type="email" required>
+            </div>
+            <div style="padding-bottom: 4rem;">
+                <label style="font-size: 30px;">الدولة:</label>
+                <input  class="reme" type="text" required>
+                <label style="padding-right: 2rem; font-size: 30px;">المدينة:</label>
+                <input  class="reme" type="text" required>
+                <label style="padding-right: 2rem; font-size: 30px;">الحي:</label>
+                <input  class="reme" type="text" required>
+            </div>
+
+        </form>
+        <button class="reme" style="margin-right: 7rem;font-size: 30px;"> <a style="color: #000000;  text-decoration: none; " href="#">التالي</a></button>
+      </div>
+
+      <h3 style=" font-size: 40px; padding-right: 14rem; padding-top: 3rem;" >تفاصيل الاشتراك</h3>
+      <div class="lam" style="display: flex; padding-right: 5rem;">
+          <div>
+             <form>
+                <h2 style="font-size: 35px;">فئة الاشتراك</h2>
+                <div>
+                  <input  style="width: 50px; height: 20px;" type="radio" id="jawal" name="fav_language" value="jawal">
+                  <label for="jawal" > الذهبية</label>
+               </div>
+               <div>
+                  <input  style="width: 50px; height: 20px;" type="radio" id="jawal" name="fav_language" value="jawal">
+                  <label for="jawal" > الماسية</label>
+               </div>
+               <div>
+                  <input  style="width: 50px; height: 20px;" type="radio" id="jawal" name="fav_language" value="jawal">
+                  <label for="jawal" > التميز</label>
+               </div>
+               <div>
+                  <input  style="width: 50px; height: 20px;" type="radio" id="jawal" name="fav_language" value="jawal">
+                  <label for="jawal" > المستشار</label>
+               </div>
+               <div>
+                  <input  style="width: 50px; height: 20px;" type="radio" id="jawal" name="fav_language" value="jawal">
+                  <label for="jawal" > الزرقاء</label>
+               </div>
+               <div>
+                  <input  style="width: 50px; height: 20px;" type="radio" id="jawal" name="fav_language" value="jawal">
+                  <label for="jawal" > الخدمات الماسية</label>
+               </div>
+             </form>
+          </div>
+          
+
+          <div style=" padding-right: 9rem; ">
+              <h2 style="font-size: 35px; ">مدة الاشتراك</h2>
+            <form>
+                <div>
+                    <input  style="width: 50px; height: 20px; ;" type="radio" id="jawal" name="fav_language" value="jawal">
+                    <label for="jawal" > شهر</label>
+                 </div>
+                 <div>
+                    <input  style="width: 50px; height: 20px;" type="radio" id="jawal" name="fav_language" value="jawal">
+                    <label for="jawal" > ثلاثة أشهر</label>
+                 </div>
+                 <div>
+                    <input  style="width: 50px; height: 20px;" type="radio" id="jawal" name="fav_language" value="jawal">
+                    <label for="jawal" >  نصف سنة</label>
+                 </div>
+                 <div>
+                    <input  style="width: 50px; height: 20px;" type="radio" id="jawal" name="fav_language" value="jawal">
+                    <label for="jawal" >   سنة</label>
+                 </div>
+              </div>
+            </form>
+      </div>
+
+ <!-- //////////////////////////////////////////////////////////////////////// -->
+
+
+ <div style="padding-bottom: 5rem;" class="dropdown">
+    <button style="margin-right: 20rem; margin-top: 2rem; padding-left: 4rem; padding-right: 4rem;" onclick="myFunction()" class="dropbtn">نوع الخدمات المتوقع طلبها</button>
+    <div style="margin-right: 20rem; padding-left: 3rem; padding-right: 3rem;" id="myDropdown" class="dropdown-content">
+      <a href="#home">خدمة1</a>
+      <a href="#about">خدمة2</a>
+      <a href="#contact">خدمة3</a>
+      <a href="#home">خدمة4</a>
+      <a href="#about">خدمة5</a>
+      <a href="#contact">خدمة6</a>
+      <a href="#home">خدمة7</a>
+      <a href="#about">خدمة8</a>
+      <a href="#home">خدمة9</a>
+      <a href="#about">خدمة10</a>
+      <a href="#contact">خدمة11</a>
+      <a href="#home">خدمة12</a>
+      <a href="#about">خدمة13</a>
+      <a href="#contact">خدمة14</a>
+      <a href="#home">خدمة15</a>
+      <a href="#about">خدمة16</a>
+      <a href="#home">خدمة17</a>
+      <a href="#about">خدمة18</a>
+      <a href="#contact">خدمة19</a>
+      <a href="#home">خدمة20</a>
+      <a href="#about">خدمة21</a>
+      <a href="#contact">خدمة22</a>
+      <a href="#home">خدمة23</a>
+      <a href="#about">خدمة24</a>
+      <a href="#home">خدمة25</a>
+      <a href="#about">خدمة26</a>
+      <a href="#contact">خدمة27</a>
+      <a href="#home">خدمة28</a>
+      <a href="#about">خدمة29</a>
+      <a href="#contact">خدمة30</a>
+      <a href="#home">خدمة31</a>
+      <a href="#about">خدمة32</a>
+      <a href="#home">خدمة33</a>
+      <a href="#about">خدمة34</a>
+      <a href="#contact">خدمة35</a>
+      <a href="#home">خدمة36</a>
+      <a href="#about">خدمة37</a>
+      <a href="#contact">خدمة38</a>
+      <a href="#home">خدمة39</a>
+      <a href="#about">خدمة40</a>
+      <a href="#home">خدمة41</a>
+      <a href="#about">خدمة42</a>
+      <a href="#contact">خدمة43</a>
+      <a href="#home">خدمة44</a>
+      <a href="#about">خدمة45</a>
+      <a href="#contact">خدمة46</a>
+      <a href="#home">خدمة47</a>
+      <a href="#about">خدمة48</a>
+      <a href="#home">خدمة49</a>
+      <a href="#about">خدمة50</a>
+    </div>
+  </div>
+  <footer>
+    <h1 style=" font-size: 70px; padding-right: 14rem; padding-top: 3rem;">بيانات النظام</h1>
+    <div style="padding-top: 4rem; padding-bottom: 4rem;">
+        <label style=" font-size: 30px; ">الرقم الماسي:</label>
+        <input  class="reme" type="text"  required>
+        <label style=" font-size: 30px; padding-right: 5rem;" >الكود الماسي:</label>
+        <input  class="reme" type="password" required>
+        <label style=" font-size: 30px; padding-right: 5rem;" >شيفرة الدعم:</label>
+        <input  class="reme" type="password" required>
+    </div>
+    <div style="padding-top: 4rem; padding-bottom: 4rem;">
+        <label style=" font-size: 30px; ">اسم المستخدم:</label>
+        <input  class="reme" type="text"  required>
+        <label style=" font-size: 30px; padding-right: 5rem;" >كلمة المرور:</label>
+        <input  class="reme" type="password" required>
+        <label style=" font-size: 30px; padding-right: 5rem;" >تأكيد كلمة المرور:</label>
+        <input  class="reme" type="password" required>
+    </div>
+    
+</footer>
+    </div>
+    <!-- ////////////////////////////////////////////////////////////////////////////// -->
+    <!-- <div class="navbar">
+        <div class="ropdown">
+        <button class="ropbtn" onclick="myFunction()">Dropdown
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="ropdown-content" id="myDropdown">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        </div> 
+      </div> -->
+      <!-- ////////////////////////////////////////////////////////////////////////////// -->
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+        
+</body>
+</html>
